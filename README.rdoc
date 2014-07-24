@@ -1,12 +1,32 @@
 == README
-
-
+This is my personal website application named Auditorium. It consists of 5 main features:
+1. Resume, Blog, and Projects Content
+2. Home page and Profile
+3. Administration Interface
+4. Contact Form
 
 
 === TODO: Version 1
 * Basic Resume
-* Basic Blog
+* Basic Profile
+* Setup Foundation
+  * Find template
+* Create show for
+  * Project
+  * Blog
+  * Resume
+
+* Project
+  * Add Gallery
+* ActiveAdmin
+  * Add WISYWIG
+
 
 === Completed
-* Basic Project (need to add gallery still)
+* Basic Project
+* Basic Blog 
 
+
+==== Future Features
+* Tags that dynamically generate Menus subitems
+* Comments and Newsletter/Updates signup
