@@ -1,5 +1,22 @@
 source 'https://rubygems.org'
+ruby '2.1.2'
 
+gem 'execjs'
+gem 'therubyracer'
+gem 'paperclip'
+gem 'foundation-rails'
+gem 'simple_form'
+gem 'mail_form'
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'foreman'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
