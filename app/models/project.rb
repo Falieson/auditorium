@@ -9,4 +9,6 @@ class Project < ActiveRecord::Base
 	 :reject_if => lambda{ |a| a[:description.blank?] },
 	 :allow_destroy => true
 
+	has_many :blogs
+
 end

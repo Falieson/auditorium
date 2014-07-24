@@ -1,2 +1,12 @@
 == README
-* Completed Basic Project (need to add gallery still)
+
+
+
+
+=== TODO: Version 1
+* Basic Resume
+* Basic Blog
+
+=== Completed
+* Basic Project (need to add gallery still)
+
