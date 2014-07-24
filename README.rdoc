@@ -1,1 +1,2 @@
 == README
+* Completed Basic Project (need to add gallery still)
