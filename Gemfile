@@ -7,6 +7,8 @@ gem 'paperclip'
 gem 'foundation-rails'
 gem 'simple_form'
 gem 'mail_form'
+gem 'devise'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :development, :test do
   gem 'sqlite3'
