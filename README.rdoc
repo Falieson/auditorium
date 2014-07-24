@@ -1,5 +1,5 @@
 == README
-This is my personal website application named Auditorium. It consists of 5 main features:
+This is my personal website application named Auditorium. It consists of 4 main features:
 1. Resume, Blog, and Projects Content
 2. Home page and Profile
 3. Administration Interface
