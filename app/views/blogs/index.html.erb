@@ -1,0 +1,29 @@
+<h1>Listing blogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Project Title</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= blog.title %></td>
+        <td><%= blog.content %></td>
+        <td>
+          <% unless blog.project_id.nil? %>
+            <%= Project.find(blog.project_id).title %>
+          <% end %>
+        </td>
+        <td><%= blog.published %></td>
+
+        <td><%= link_to 'Show', blog %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
