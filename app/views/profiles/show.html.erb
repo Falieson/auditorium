@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company title:</strong>
+  <%= @profile.company_title %>
+</p>
+
+<p>
+  <strong>Company description:</strong>
+  <%= @profile.company_description %>
+</p>
+
+<p>
+  <strong>Company industry:</strong>
+  <%= @profile.company_industry %>
+</p>
+
+<p>
+  <strong>Job title:</strong>
+  <%= @profile.job_title %>
+</p>
+
+<p>
+  <strong>Job description:</strong>
+  <%= @profile.job_description %>
+</p>
+
+<p>
+  <strong>Firstday:</strong>
+  <%= @profile.firstday %>
+</p>
+
+<p>
+  <strong>Lastday:</strong>
+  <%= @profile.lastday %>
+</p>
+
+<p>
+  <strong>Personal note:</strong>
+  <%= @profile.personal_note %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

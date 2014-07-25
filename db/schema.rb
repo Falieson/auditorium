@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140725173504) do
+ActiveRecord::Schema.define(version: 20140725191009) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -53,6 +53,26 @@ ActiveRecord::Schema.define(version: 20140725173504) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "project_id"
+  end
+
+  create_table "profile_accomplishments", force: true do |t|
+    t.integer  "profile_id"
+    t.string   "description"
+    t.string   "url"
+    t.date     "published"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "profiles", force: true do |t|
+    t.string   "name"
+    t.date     "birthdate"
+    t.string   "headline"
+    t.text     "about_present"
+    t.text     "about_past"
+    t.text     "about_future"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "project_features", force: true do |t|

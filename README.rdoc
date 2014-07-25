@@ -1,13 +1,12 @@
 == README
 This is my personal website application named Auditorium. It consists of 4 main features:
-1. Resume, Blog, and Projects Content
-2. Home page and Profile
+1. Create Resume, Blog, and Projects Content
+2. Create a Profile displayed on the Home page with the latest blog entry
 3. Administration Interface
 4. Contact Form
 
 
 === TODO: Version 1
-* Basic Profile
 * Setup Foundation
   * Find template
 * Create show for
@@ -21,13 +20,17 @@ This is my personal website application named Auditorium. It consists of 4 main 
 * ActiveAdmin
   * Add WISYWIG
 
+* DIBTP
+  * Labels in Profile Edit aren't working
+  * Date fields in has_many are missing the separator div inside of all [Admin]#edit 
 
 === Completed
 * Basic Project
 * Basic Blog 
 * Basic Resume
-
+* Basic Profile
 
 ==== Future Features
 * Tags that dynamically generate Menus subitems
 * Comments and Newsletter/Updates signup
+* Better date ranges for ActiveAdmin https://groups.google.com/forum/#!msg/activeadmin/giarWTmQBHE/PezQy-B-BCwJ

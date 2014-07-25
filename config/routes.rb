@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  
+
+  resources :profiles, :only => [:index, :show]      
   resources :projects, :only => [:index, :show]
   resources :blogs, :only => [:index, :show]  
   resources :resumes, :only => [:index, :show]    
