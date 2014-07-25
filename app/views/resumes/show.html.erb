@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company title:</strong>
+  <%= @resume.company_title %>
+</p>
+
+<p>
+  <strong>Company description:</strong>
+  <%= @resume.company_description %>
+</p>
+
+<p>
+  <strong>Company industry:</strong>
+  <%= @resume.company_industry %>
+</p>
+
+<p>
+  <strong>Job title:</strong>
+  <%= @resume.job_title %>
+</p>
+
+<p>
+  <strong>Job description:</strong>
+  <%= @resume.job_description %>
+</p>
+
+<p>
+  <strong>Firstday:</strong>
+  <%= @resume.firstday %>
+</p>
+
+<p>
+  <strong>Lastday:</strong>
+  <%= @resume.lastday %>
+</p>
+
+<p>
+  <strong>Personal note:</strong>
+  <%= @resume.personal_note %>
+</p>
+
+<%= link_to 'Edit', edit_resume_path(@resume) %> |
+<%= link_to 'Back', resumes_path %>

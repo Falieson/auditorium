@@ -1,0 +1,39 @@
+<h1>Listing resumes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company title</th>
+      <th>Company description</th>
+      <th>Company industry</th>
+      <th>Job title</th>
+      <th>Job description</th>
+      <th>Firstday</th>
+      <th>Lastday</th>
+      <th>Personal note</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @resumes.each do |resume| %>
+      <tr>
+        <td><%= resume.company_title %></td>
+        <td><%= resume.company_description %></td>
+        <td><%= resume.company_industry %></td>
+        <td><%= resume.job_title %></td>
+        <td><%= resume.job_description %></td>
+        <td><%= resume.firstday %></td>
+        <td><%= resume.lastday %></td>
+        <td><%= resume.personal_note %></td>
+        <td><%= link_to 'Show', resume %></td>
+        <td><%= link_to 'Edit', edit_resume_path(resume) %></td>
+        <td><%= link_to 'Destroy', resume, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Resume', new_resume_path %>

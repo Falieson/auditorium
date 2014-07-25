@@ -7,7 +7,6 @@ This is my personal website application named Auditorium. It consists of 4 main 
 
 
 === TODO: Version 1
-* Basic Resume
 * Basic Profile
 * Setup Foundation
   * Find template
@@ -15,8 +14,9 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Project
   * Blog
   * Resume
+  * Home
 
-* Project
+* Project, Profile, Blog
   * Add Gallery
 * ActiveAdmin
   * Add WISYWIG
@@ -25,6 +25,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
 === Completed
 * Basic Project
 * Basic Blog 
+* Basic Resume
 
 
 ==== Future Features

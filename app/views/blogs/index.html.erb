@@ -18,6 +18,8 @@
         <td>
           <% unless blog.project_id.nil? %>
             <%= Project.find(blog.project_id).title %>
+          <% else %>
+            =none=
           <% end %>
         </td>
         <td><%= blog.published %></td>

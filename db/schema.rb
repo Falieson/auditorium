@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724210241) do
+ActiveRecord::Schema.define(version: 20140725173504) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -79,6 +79,26 @@ ActiveRecord::Schema.define(version: 20140724210241) do
     t.decimal  "version"
     t.date     "lastpublished"
     t.date     "firstpublished"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "resume_accomplishments", force: true do |t|
+    t.integer  "resume_id"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "resumes", force: true do |t|
+    t.string   "company_title"
+    t.text     "company_description"
+    t.string   "company_industry"
+    t.string   "job_title"
+    t.text     "job_description"
+    t.date     "firstday"
+    t.date     "lastday"
+    t.text     "personal_note"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
