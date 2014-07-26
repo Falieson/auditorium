@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
+  before_action :set_profile
 
   # GET /projects
   # GET /projects.json
@@ -67,12 +68,16 @@ class ProjectsController < ApplicationController
       @project = Project.find(params[:id])
     end
 
+    def set_profile
+      @latest_profile = Profile.order('updated_at DESC').first
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
       params.require(:project).permit(
         :title, :description, :git_url, :demo_url, :version, :lastpublished, :firstpublished,
-          :project_features_attributes[:project_id, :description],
-          :project_mentions_attributes[:project_id, :title, :url, :published]
+          :project_features_attributes[:project_id, :description, :_destroy => true],
+          :project_mentions_attributes[:project_id, :title, :url, :published, :_destroy => true]
         )
     end
 end

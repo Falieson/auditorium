@@ -1,5 +1,5 @@
 ActiveAdmin.register Resume do
-  permit_params  :company_title, :company_description, :company_industry, :job_title, :job_description, :firstday, :lastday, :personal_note,
+  permit_params  :company_title, :company_description, :company_industry, :job_title, :job_description, :firstday, :lastday, :personal_note, :company_url,
    resume_accomplishments_attributes: [:resume_id, :description, :_destroy]
 
   form do |f|
@@ -10,15 +10,16 @@ ActiveAdmin.register Resume do
 
   form do |f|
     f.inputs "Company Details" do
-      f.inputs :company_title
-      f.inputs :company_description
-      f.inputs :company_industry
+      f.input :company_title, :label => "Company Title"
+      f.input :company_description, :label => "About the Company"
+      f.input :company_industry, :label => "Industry"
+      f.input :company_url, :label => "Reference Article"
     end
     f.inputs "Job Details" do
-      f.inputs :job_title
-      f.inputs :job_description
-      f.inputs :firstday
-      f.inputs :lastday
+      f.input :job_title, :label => "Job Title"
+      f.input :job_description, :label => "About the Job"
+      f.input :firstday, :label => "First Day"
+      f.input :lastday, :label => "Last Day"
       f.inputs do
         f.has_many :resume_accomplishments, :allow_destroy => true, :heading => "Accomplishments" do |cf|
           cf.input :description

@@ -2,8 +2,8 @@ ActiveAdmin.register Profile do
 
   remove_filter :about_present, :about_past, :about_future
 
-  permit_params  :name, :birthdate, :headline, :about_present, :about_past, :about_future,
-   profile_accomplishments_attributes: [:profile_id, :description, :url, :published, :_destroy]
+  permit_params  :id, :name, :birthdate, :headline, :about_present, :about_past, :about_future,
+   profile_accomplishments_attributes: [:profile_id, :description, :url, :published, :_destroy => true]
   
   form do |f|
     f.semantic_errors *f.object.errors.keys

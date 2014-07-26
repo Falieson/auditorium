@@ -71,7 +71,7 @@ class ProfilesController < ApplicationController
     def profile_params
       params.require(:profile).permit(
         :name, :birthdate, :headline, :about_present, :about_past, :about_future,
-          :profile_accomplishments_attributes[:profile_id, :description, :url, :published]
+          :profile_accomplishments_attributes[:profile_id, :description, :url, :published, :_destroy => true]
         )
     end
 end

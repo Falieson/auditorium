@@ -1,8 +1,6 @@
 ActiveAdmin.register Project do
 
-  permit_params  :title, :description, :git_url, :demo_url, :version, :lastpublished, :firstpublished,
-   project_features_attributes: [:project_id, :description, :_destroy], 
-   project_mentions_attributes: [:project_id, :title, :url, :published, :_destroy]
+  permit_params  :title, :headline, :description, :git_url, :demo_url, :version, :lastpublished, :firstpublished, project_features_attributes: [:project_id, :description, :_destroy], project_mentions_attributes: [:project_id, :title, :url, :published, :_destroy]
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
@@ -12,13 +10,14 @@ ActiveAdmin.register Project do
 
   form do |f|
     f.inputs "Project Details" do
-      f.inputs :title
-      f.inputs :description
-      f.inputs :git_url, :default => "http://github.com/"
-      f.inputs :demo_url
-      f.inputs :version
-      f.inputs :firstpublished
-      f.inputs :lastpublished      
+      f.input :title
+      f.input :headline      
+      f.input :description
+      f.input :git_url, :default => "http://github.com/"
+      f.input :demo_url
+      f.input :version
+      f.input :firstpublished
+      f.input :lastpublished      
       f.inputs do
         f.has_many :project_features, :allow_destroy => true, :heading => 'Features' do |cf|
           cf.input :description
@@ -38,28 +37,4 @@ ActiveAdmin.register Project do
     f.actions
   end
 
-
-
-
-
-
-
- 
-  # See permitted parameters documentation:
-  # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # permit_params :list, :of, :attributes, :on, :model
-  #
-  # or
-  #
-
-  
-  # permit_params do
-  #  permitted = [:permitted, :attributes]
-  #  permitted << :other if resource.something?
-  #  permitted
-  # end
-
-
-  
 end

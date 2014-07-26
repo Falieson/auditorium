@@ -9,34 +9,51 @@ This is my personal website application named Auditorium. It consists of 4 main 
 === TODO: Version 1
 * Create show for
   * Project
-  * Blog
   * Resume
-  * Home
-
-* Project, Profile, Blog
-  * Add Gallery
+	* to "Present"
+  * Blog
+* Add Gallery
+	* Project, Profile, Blog, Sidebar
+* Contact Form
 * ActiveAdmin
   * Add WISYWIG
+* Upload to Heroku
+  * Set DNS
+  * Add META keywords/description
+  * Enable Robots
+* Setup Tracking
+  * Segment.io
+  * Optimizely
 
 * DIBTP
   * Labels in Profile Edit aren't working
   * Date fields in has_many are missing the separator div inside of all [Admin]#edit 
-  * Unnecessary <hr /> at the bottom of a last/only blog post
+  * http://stackoverflow.com/questions/24967581/activeadmin-duplicates-nested-forms-and-delete-checkbox-doesnt-work/24970543#24970543
+  * Create time_between to a helper
+  
 
 === Completed
-* Basic Project
-* Basic Blog 
-* Basic Resume
-* Basic Profile
-* Setup Foundation & rails_layout
-  * Found a basic Blog template from the zurb site
+* ActiveAdmin
+  * Blog
+  * Profile
+  * Resume
+  * Project
+* Setup Foundation, rails_layout, basic blog template from the zurb site
+* Index
+  * Blog
+  * Profile
+  * Resume
+  * Home
+  * Project  
 
 == How it Works
 * The most recently _published_ blog article will show up on the home page
 * The most recently _updated_ profile will show up on the home page 
 
 ==== Future Features
+* Active Admin form validations for all Models
 * Tags that dynamically generate Menus subitems
 * Comments and Newsletter/Updates signup
 * Better date ranges for ActiveAdmin https://groups.google.com/forum/#!msg/activeadmin/giarWTmQBHE/PezQy-B-BCwJ
 * Pretty typography
+* "Like" feature for projects and blogs (adds points + comments for priority and tags)

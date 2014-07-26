@@ -2,6 +2,7 @@ class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :set_profile
 
+
   # GET /blogs
   # GET /blogs.json
   def index
@@ -76,7 +77,7 @@ class BlogsController < ApplicationController
     def blog_params
       params.require(:blog).permit(
         :title, :description, :published, :project_id,
-        :project_attributes [:title]
+          :project_attributes [:title, :_destroy => true]
         )
     end
 end

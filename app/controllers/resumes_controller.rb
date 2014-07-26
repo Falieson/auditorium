@@ -4,7 +4,9 @@ class ResumesController < ApplicationController
   # GET /resumes
   # GET /resumes.json
   def index
-    @resumes = Resume.all
+    @resumes = Resume.all  
+    @latest_profile = Profile.order('updated_at DESC').first
+    @latest_resume = Resume.order('updated_at DESC').first    
   end
 
   # GET /resumes/1
@@ -67,11 +69,12 @@ class ResumesController < ApplicationController
       @resume = Resume.find(params[:id])
     end
 
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def resume_params
       params.require(:resume).permit(
         :company_title, :company_description, :company_industry, :job_title, :job_description, :firstday, :lastday, :personal_note,
-         :resume_accomplishments_attributes[:resume_id, :description]
+         :resume_accomplishments_attributes[:resume_id, :description, :_destroy => true]
         )
     end
 end

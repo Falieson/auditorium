@@ -18,23 +18,14 @@
       <%= render 'layouts/messages' %>
       <!-- Main Page Content and Sidebar -->
       <div class="row">       
-        <%= yield %>
-      
+        <div class="large-8 columns" role="content">
+          <%= yield %>
+        </div>
       <!-- Sidebar -->
-      <aside class="large-3 columns">
-        <h5>Categories</h5>
-        <ul class="side-nav">
-          <li><a href="#">News</a></li>
-          <li><a href="#">Code</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Fun</a></li>
-          <li><a href="#">Weasels</a></li>
-        </ul>
-   
+      <div style="width: 100%; height:45px;"></div>
+      <aside class="large-4 columns">
         <div class="panel">
-          <h5>Featured</h5>
-          <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-          <a href="#">Read More &rarr;</a>
+          <%= render 'layouts/sidebar' %>
         </div>
       </aside>
       <!-- End Sidebar -->
@@ -61,6 +52,6 @@
         </div>
       </div>
     </footer>  
-    
+
   </body>
 </html>

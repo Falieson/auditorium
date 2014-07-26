@@ -1,0 +1,17 @@
+<h4 style="text-align:center;"><%= @latest_profile.headline %></h4>
+<hr />
+<strong>PRESENT</strong>
+<p><%= @latest_profile.about_present %></p>
+<strong>FUTURE</strong>
+<p><%= @latest_profile.about_future %></p>
+<strong>PAST</strong>
+<p><%= @latest_profile.about_past %></p>
+<br />
+<strong>Bragging Rights:</strong>
+<ul>
+	<% @latest_profile.profile_accomplishments.each do |accomplishments| %>
+		<li>
+			<%= link_to accomplishments.description, accomplishments.url, :target => "_blank" %>
+		</li>
+	<% end %>
+</ul>
