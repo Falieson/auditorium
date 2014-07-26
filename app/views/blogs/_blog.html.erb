@@ -1,0 +1,9 @@
+<article>
+
+<h3><%= link_to blog.title, blog_path(blog.id) %></h3>
+<h6>Written by <%= @latest_profile.name %> on <%= blog.published %></h6>
+
+<%= simple_format blog.content %>  
+</article>
+
+<hr />

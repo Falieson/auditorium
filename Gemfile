@@ -15,6 +15,7 @@ gem 'mail_form'
 group :development, :test do
   gem 'sqlite3'
   gem 'foreman'
+  gem 'rails_layout'
 end
 
 group :production do

@@ -7,8 +7,6 @@ This is my personal website application named Auditorium. It consists of 4 main 
 
 
 === TODO: Version 1
-* Setup Foundation
-  * Find template
 * Create show for
   * Project
   * Blog
@@ -23,14 +21,22 @@ This is my personal website application named Auditorium. It consists of 4 main 
 * DIBTP
   * Labels in Profile Edit aren't working
   * Date fields in has_many are missing the separator div inside of all [Admin]#edit 
+  * Unnecessary <hr /> at the bottom of a last/only blog post
 
 === Completed
 * Basic Project
 * Basic Blog 
 * Basic Resume
 * Basic Profile
+* Setup Foundation & rails_layout
+  * Found a basic Blog template from the zurb site
+
+== How it Works
+* The most recently _published_ blog article will show up on the home page
+* The most recently _updated_ profile will show up on the home page 
 
 ==== Future Features
 * Tags that dynamically generate Menus subitems
 * Comments and Newsletter/Updates signup
 * Better date ranges for ActiveAdmin https://groups.google.com/forum/#!msg/activeadmin/giarWTmQBHE/PezQy-B-BCwJ
+* Pretty typography
