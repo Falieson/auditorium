@@ -49,6 +49,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
 * Contact Form  
 
 == How it Works
+* Login to /admin/ admin@example.com::password and change the login credentials
 * The most recently _published_ blog article will show up on the home page
 * The most recently _updated_ profile will show up on the home page 
 
