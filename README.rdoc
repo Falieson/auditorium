@@ -6,17 +6,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
 4. Contact Form
 
 
-=== TODO: Version 1
-* Create show for
-  * Project
-  * Resume
-	* to "Present"
-  * Blog
-* Add Gallery
-	* Project, Profile, Blog, Sidebar
-* Contact Form
-* ActiveAdmin
-  * Add WISYWIG
+=== TODO: Version 1.0
 * Upload to Heroku
   * Set DNS
   * Add META keywords/description
@@ -30,7 +20,18 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Date fields in has_many are missing the separator div inside of all [Admin]#edit 
   * http://stackoverflow.com/questions/24967581/activeadmin-duplicates-nested-forms-and-delete-checkbox-doesnt-work/24970543#24970543
   * Create time_between to a helper
-  
+
+== TODO: Version 1.1
+* Comments and Newsletter/Updates signup
+* Add Gallery
+	* Project, Profile, Blog, Sidebar
+* Create show for
+  * Project
+  * Resume
+	* to "Present"
+  * Blog
+* ActiveAdmin
+  * Add WISYWIG  
 
 === Completed
 * ActiveAdmin
@@ -45,6 +46,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Resume
   * Home
   * Project  
+* Contact Form  
 
 == How it Works
 * The most recently _published_ blog article will show up on the home page
@@ -53,7 +55,6 @@ This is my personal website application named Auditorium. It consists of 4 main 
 ==== Future Features
 * Active Admin form validations for all Models
 * Tags that dynamically generate Menus subitems
-* Comments and Newsletter/Updates signup
 * Better date ranges for ActiveAdmin https://groups.google.com/forum/#!msg/activeadmin/giarWTmQBHE/PezQy-B-BCwJ
 * Pretty typography
 * "Like" feature for projects and blogs (adds points + comments for priority and tags)

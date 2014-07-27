@@ -1,28 +1,18 @@
 <%# add navigation links to this file %>
 <ul class="left">
 	<li class="active"><%= link_to "Resume", resumes_path %></li>
-	<li class="has-dropdown">
-		<%= link_to "Blog", blogs_path %>
-	    <ul class="dropdown">
-	      <li><a href="#">First link in dropdown</a></li>
-	    </ul>		
-	</li>
-	<li class="has-dropdown">
-		<%= link_to "Projects", projects_path %>
-	    <ul class="dropdown">
-	      <li><a href="#">First link in dropdown</a></li>
-	    </ul>		
-	</li>
+	<li><%= link_to "Blog", blogs_path %></li>
+	<li><%= link_to "Projects", projects_path %></li>
 </ul>
 
 <ul class="right">
   <li class="active">
-    <%= link_to "Contact", '#', "data-reveal-id" => "contact-form" %>
+    <%= link_to "Contact", new_contact_path %>
   </li>
-  <li class="">
+  <li>
     <%= link_to "Google+", 'https://plus.google.com/+FlorianMettetal/', :target => "_blank" %>
   </li>       
-  <li class="">
+  <li>
     <%= link_to "Twitter", 'https://twitter.com/FlorianMettetal', :target => "_blank" %>
   </li>   
 </ul>

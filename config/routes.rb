@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   resources :profiles, :only => [:index, :show]      
   resources :projects, :only => [:index, :show]
   resources :blogs, :only => [:index, :show]  
-  resources :resumes, :only => [:index, :show]    
+  resources :resumes, :only => [:index, :show] 
+  resources "contacts", only: [:new, :create]   
 
   root 'home#index'
 
