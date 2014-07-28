@@ -5,6 +5,14 @@ This is my personal website application named Auditorium. It consists of 4 main 
 3. Administration Interface
 4. Contact Form
 
+== Version 1.0 Notes ==
+* Everything works in a basic sense but there needs to be a project, blog, and profile for the website to open up and work
+
+=== SETUP ===
+* Login to /admin/ admin@example.com::password and change the login credentials
+* The most recently _published_ blog article will show up on the home page
+* The most recently _updated_ profile will show up on the home page 
+
 
 === TODO: Version 1.0
 * Upload to Heroku
@@ -16,10 +24,8 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Optimizely
 
 * DIBTP
-  * Labels in Profile Edit aren't working
-  * Date fields in has_many are missing the separator div inside of all [Admin]#edit 
-  * http://stackoverflow.com/questions/24967581/activeadmin-duplicates-nested-forms-and-delete-checkbox-doesnt-work/24970543#24970543
-  * Create time_between to a helper
+  * Date fields in ActiveAdmin aren't aligned correctly
+  * Move time_between to a helper
 
 == TODO: Version 1.1
 * Comments and Newsletter/Updates signup
@@ -33,7 +39,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
 * ActiveAdmin
   * Add WISYWIG  
 
-=== Completed
+=== Version 1.0 ===
 * ActiveAdmin
   * Blog
   * Profile
@@ -47,11 +53,6 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Home
   * Project  
 * Contact Form  
-
-== How it Works
-* Login to /admin/ admin@example.com::password and change the login credentials
-* The most recently _published_ blog article will show up on the home page
-* The most recently _updated_ profile will show up on the home page 
 
 ==== Future Features
 * Active Admin form validations for all Models

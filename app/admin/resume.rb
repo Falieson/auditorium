@@ -1,6 +1,6 @@
 ActiveAdmin.register Resume do
   permit_params  :company_title, :company_description, :company_industry, :job_title, :job_description, :firstday, :lastday, :personal_note, :company_url,
-   resume_accomplishments_attributes: [:resume_id, :description, :_destroy]
+   resume_accomplishments_attributes: [:id, :resume_id, :description, :_destroy]
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
