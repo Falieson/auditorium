@@ -15,10 +15,6 @@ This is my personal website application named Auditorium. It consists of 4 main 
 
 
 === TODO: Version 1.0
-* Upload to Heroku
-  * Set DNS
-  * Add META keywords/description
-  * Enable Robots
 * Setup Tracking
   * Segment.io
   * Optimizely
@@ -54,7 +50,11 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Home
   * Project  
 * Contact Form  
-
+* Upload to Heroku
+  * Set DNS
+  * Add META keywords/description
+  * Enable Robots
+  
 ==== Future Features
 * Active Admin form validations for all Models
 * Tags that dynamically generate Menus subitems
