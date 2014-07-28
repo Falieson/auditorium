@@ -44,6 +44,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    analytics-ruby (2.0.5)
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
@@ -205,6 +206,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  analytics-ruby
   coffee-rails (~> 4.0.0)
   devise
   execjs

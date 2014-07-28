@@ -5,12 +5,11 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
-
-#need to be configured/used still
 gem 'paperclip'
 gem 'foundation-rails'
 gem 'simple_form'
 gem 'mail_form'
+gem 'analytics-ruby', :require => 'segment/analytics'
 
 group :development, :test do
   gem 'sqlite3'
