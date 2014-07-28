@@ -1,6 +1,6 @@
 ActiveAdmin.register Project do
 
-  permit_params  :title, :headline, :description, :git_url, :demo_url, :version, :lastpublished, :firstpublished, project_features_attributes: [:project_id, :description, :_destroy], project_mentions_attributes: [:project_id, :title, :url, :published, :_destroy]
+  permit_params  :title, :headline, :description, :git_url, :demo_url, :version, :lastpublished, :firstpublished, project_features_attributes: [:id, :project_id, :description, :_destroy], project_mentions_attributes: [:id, :project_id, :title, :url, :published, :_destroy]
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
