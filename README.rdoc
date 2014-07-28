@@ -26,6 +26,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
 * DIBTP
   * Date fields in ActiveAdmin aren't aligned correctly
   * Move time_between to a helper
+  * Fix Blog can't select project
 
 == TODO: Version 1.1
 * Comments and Newsletter/Updates signup

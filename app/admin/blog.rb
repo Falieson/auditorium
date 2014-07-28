@@ -1,6 +1,5 @@
 ActiveAdmin.register Blog do
-  permit_params :title, :content, :published, :project_id,
-   project_attributes: [:id, :project_id, :title, :_destroy]
+  permit_params :title, :content, :published, :project_id, projects_attributes: [:id, :title, :_destroy]
 
   form do |f|
     f.inputs "Blog Post" do

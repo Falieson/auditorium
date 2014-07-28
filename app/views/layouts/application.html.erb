@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Auditorium" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Auditorium" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "Florian Mettetal's Resume, Projects, and Blog - Auditorium " %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "New Ruby on Rails developer in San Francisco, learning RoR and JavaScript. Expert Digital Marketer and Web Analyst" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%# Modernizr is required for Zurb Foundation %>
     <%= javascript_include_tag 'vendor/modernizr' %>
@@ -43,10 +43,12 @@
           </div>
           <div class="large-6 columns">
             <ul class="inline-list right">
-              <li><a href="#">Preferred Link 1</a></li>
-              <li><a href="#">Preferred Link 2</a></li>
-              <li><a href="#">Preferred Link 3</a></li>
-              <li><a href="#">Preferred Link 4</a></li>
+              <li>
+                <%= link_to "Resume", resumes_path %>
+              </li>
+              <li>
+                <%= link_to "Contact Me", new_contact_path %>
+              </li>
             </ul>
           </div>
         </div>
