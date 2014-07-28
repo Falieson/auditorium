@@ -42,6 +42,9 @@ main {
   @include twelve-columns;
   background-color: #eee;
   }
+footer {
+  background-color: #eee;
+  }  
 section {
   @extend .row;
   margin-top: 20px;
