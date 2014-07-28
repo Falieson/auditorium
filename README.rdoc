@@ -23,6 +23,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Date fields in ActiveAdmin aren't aligned correctly
   * Move time_between to a helper
   * Fix Blog can't select project
+  * Fix Resume URL if nil
 
 == TODO: Version 1.1
 * Comments and Newsletter/Updates signup
@@ -54,7 +55,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Set DNS
   * Add META keywords/description
   * Enable Robots
-  
+
 ==== Future Features
 * Active Admin form validations for all Models
 * Tags that dynamically generate Menus subitems

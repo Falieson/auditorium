@@ -4,7 +4,7 @@ class ResumesController < ApplicationController
   # GET /resumes
   # GET /resumes.json
   def index
-    @resumes = Resume.all  
+    @resumes = Resume.all.order('lastday DESC')
     @latest_profile = Profile.order('updated_at DESC').first
     @latest_resume = Resume.order('updated_at DESC').first    
   end
