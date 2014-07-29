@@ -2,7 +2,11 @@
 
 	<h3>
 		<%= resume.job_title %>
+		<% if resume.company_title.downcase == "contractor" %>
+		 (Contractor)
+		<% else %>
 		 at <%= link_to resume.company_title, resume.company_url, :target => "_blank" %>
+		<% end %>
 	</h3>
 	<h6>
 		<%= resume.firstday.strftime("%B %Y") %> - 
