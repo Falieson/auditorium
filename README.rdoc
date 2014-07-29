@@ -11,13 +11,19 @@ This is my personal website application named Auditorium. It consists of 4 main 
 === SETUP ===
 * Login to /admin/ admin@example.com::password and change the login credentials
 * The most recently _published_ blog article will show up on the home page
-* The most recently _updated_ profile will show up on the home page 
+* The most recently _updated_ profile will show up in the sidebar
 
-
-=== TODO: Version 1.0
-* Setup Tracking
-  * Segment.io
-  * Optimizely
+== TODO: Version 1.1
+* Add Gallery
+  * Project, Profile, Blog, Sidebar
+* Comments and Newsletter/Updates signup
+* Create show for
+  * Project
+  * Resume
+  * to "Present"
+  * Blog
+* ActiveAdmin
+  * Add WISYWIG  
 
 * DIBTP
   * Date fields in ActiveAdmin aren't aligned correctly
@@ -25,17 +31,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Fix Blog can't select project
   * Fix Resume URL if nil
 
-== TODO: Version 1.1
-* Comments and Newsletter/Updates signup
-* Add Gallery
-	* Project, Profile, Blog, Sidebar
-* Create show for
-  * Project
-  * Resume
-	* to "Present"
-  * Blog
-* ActiveAdmin
-  * Add WISYWIG  
+
 
 === Version 1.0 ===
 * ActiveAdmin
@@ -55,6 +51,9 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Set DNS
   * Add META keywords/description
   * Enable Robots
+* Setup Tracking
+  * Segment.io
+  * GoogleAnalytics
 
 ==== Future Features
 * Active Admin form validations for all Models
