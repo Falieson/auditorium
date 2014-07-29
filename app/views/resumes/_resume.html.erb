@@ -8,16 +8,20 @@
 	<h6>
 		<%= resume.firstday.strftime("%B %Y") %> - 
 		<% if resume.lastday.future? %>
+		<% resume.lastday=Time.now() %>
 			Present
 		<% else %> 
 			<%= resume.lastday.strftime("%B %Y") %>
 		<% end %>
 
-
 		<% totalmonths = (resume.lastday.year * 12 + resume.lastday.month) - (resume.firstday.year * 12 + resume.firstday.month)  %>
-		<% yearsat = totalmonths/12 %>
 		<% monthsat = totalmonths%12 %>
-		(<%= time_ago_in_words(yearsat.years.ago)+" "+time_ago_in_words(monthsat.months.ago) %>)
+		<% if totalmonths > 12 %>
+			<% yearsat = totalmonths/12 %>
+			(<%= time_ago_in_words(yearsat.years.ago)+" "+time_ago_in_words(monthsat.months.ago) %>)
+		<% else %>
+			(<%= time_ago_in_words(monthsat.months.ago) %>)
+		<% end %>
 	</h6>	
 	<hr />
 	<%= simple_format resume.company_description %>
