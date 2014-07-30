@@ -11,7 +11,7 @@
 <ul>
 	<% @latest_profile.profile_accomplishments.each do |accomplishments| %>
 		<li>
-			<%= link_to accomplishments.description, accomplishments.url, :target => "_blank" %>
+		<%= link_to accomplishments.description, accomplishments.url, :target => "_blank" %>
 		</li>
 	<% end %>
 </ul>

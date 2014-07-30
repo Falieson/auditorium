@@ -3,6 +3,6 @@
 	<h3><%= blog.title %></h3>
 	<h6>Written by <%= @latest_profile.name %> on <%= blog.published.strftime("%b %d, %Y") %></h6>
 	<hr />
-	<%= simple_format blog.content %>  
+	<%= simple_format(blog.content) %>  
 
 </article>

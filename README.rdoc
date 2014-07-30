@@ -25,12 +25,14 @@ This is my personal website application named Auditorium. It consists of 4 main 
 * ActiveAdmin
   * Add WISYWIG  
 
+== TODO: Version 1.2
+* Scraper grabs "Current Streak" from Github or displays time since last public commit
+
 * DIBTP
   * Date fields in ActiveAdmin aren't aligned correctly
   * Move time_between to a helper
   * Fix Blog can't select project
   * Fix Resume URL if nil
-
 
 
 === Version 1.0 ===
@@ -57,6 +59,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
 
 ==== Future Features
 * Blog pagination
+
 * Active Admin form validations for all Models
 * Tags that dynamically generate Menus subitems
 * Better date ranges for ActiveAdmin https://groups.google.com/forum/#!msg/activeadmin/giarWTmQBHE/PezQy-B-BCwJ
