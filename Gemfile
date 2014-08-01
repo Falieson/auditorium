@@ -11,6 +11,10 @@ gem 'simple_form'
 gem 'mail_form'
 gem 'analytics-ruby', :require => 'segment/analytics'
 
+gem 'rmagick'
+gem 'carrierwave'
+gem 'jquery-fileupload-rails'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'foreman'

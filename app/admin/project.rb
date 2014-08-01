@@ -2,7 +2,9 @@ ActiveAdmin.register Project do
 
   permit_params  :title, :headline, :description, :git_url, :demo_url, :version, :lastpublished, :firstpublished, 
    project_features_attributes: [:id, :project_id, :description, :_destroy], 
-   project_mentions_attributes: [:id, :project_id, :title, :url, :published, :_destroy]
+   project_mentions_attributes: [:id, :project_id, :title, :url, :published, :_destroy], 
+   project_images_attributes: [:id, :project_id, :title, :image, :_destroy]
+
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
@@ -10,7 +12,7 @@ ActiveAdmin.register Project do
     f.buttons
   end
 
-  form do |f|
+  form(:html => {:multipart => true}) do |f|
     f.inputs "Project Details" do
       f.input :title
       f.input :headline      
@@ -25,11 +27,19 @@ ActiveAdmin.register Project do
           cf.input :description
         end
       end
+      
       f.inputs do
         f.has_many :project_mentions, :allow_destroy => true, :heading => 'Mentions' do |cf|
           cf.input :title 
           cf.input :url
           cf.input :published
+        end
+      end
+
+      f.inputs do
+        f.has_many :project_images, :allow_destroy => true, :heading => 'Images' do |cf|
+          cf.input :title
+          cf.input :image, :as => :file
         end
       end
 

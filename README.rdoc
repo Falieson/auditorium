@@ -33,7 +33,7 @@ This is my personal website application named Auditorium. It consists of 4 main 
   * Move time_between to a helper
   * Fix Blog can't select project
   * Fix Resume URL if nil
-
+  * Move jquery-fileupload to only be loaded int he ActiveAdmin.js
 
 === Version 1.0 ===
 * ActiveAdmin

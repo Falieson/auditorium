@@ -76,8 +76,9 @@ class ProjectsController < ApplicationController
     def project_params
       params.require(:project).permit(
         :title, :description, :git_url, :demo_url, :version, :lastpublished, :firstpublished,
-          :project_features_attributes[:project_id, :description, :_destroy => true],
-          :project_mentions_attributes[:project_id, :title, :url, :published, :_destroy => true]
+          :project_features_attributes[:project_id, :description, :_destroy],
+          :project_mentions_attributes[:project_id, :title, :url, :published, :_destroy], 
+          :project_images_attributes[:project_id, :title, :image, :_destroy]
         )
     end
 end

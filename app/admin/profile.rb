@@ -13,14 +13,14 @@ ActiveAdmin.register Profile do
 
   form do |f|
     f.inputs "Basic Information" do 
-      f.inputs :name, :default => "Florian Mettetal"
-      f.inputs :headline
-      f.inputs :birthdate, :default => "1986-12-12 00:00:00"
+      f.input :name, :default => "Florian Mettetal"
+      f.input :headline
+      f.input :birthdate, :default => "1986-12-12 00:00:00"
     end
     f.inputs "And about yourself?" do
-      f.inputs :about_past, :label => "Past"
-      f.inputs :about_present, :label => "Present"
-      f.inputs :about_future, :label => "Future"
+      f.input :about_past, :label => "Past"
+      f.input :about_present, :label => "Present"
+      f.input :about_future, :label => "Future"
     end
     f.inputs "Accomplishments" do
       f.has_many :profile_accomplishments, :allow_destroy => true, :heading => 'Accomplishment' do |cf|
